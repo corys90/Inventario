@@ -1,0 +1,29 @@
+.pageMobile{
+    width: 33%;
+}
+
+.btnColorOk{
+    /*background-color: deepskyblue;*/
+    width: 40%;
+}
+
+.btnColorNOk{
+    /*background-color: darkorange;*/
+    width: 40%;  
+}
+
+
+@media (max-width: 576px) {
+
+    .pageMobile{
+        width: 90%
+    }   
+    
+    .btnColorOk{
+        width: 100%;
+    }
+
+    .btnColorNOk{
+        width: 100%;  
+    }
+}
