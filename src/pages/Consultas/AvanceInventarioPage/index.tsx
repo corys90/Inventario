@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Accordion, Button, Container, Form, Pagination } from "react-bootstrap";
+import { Accordion, Button, Container, Form } from "react-bootstrap";
 import {  FaCalendarAlt, FaCheck, FaEye, FaShareAlt, FaTruck } from "react-icons/fa";
 import SelectAlmacenes from "../../../components/Almacenes";
 import SelectCentro from "../../../components/Centros";
@@ -260,7 +260,6 @@ const AvanceInventarioPage = () =>{
                     highlightOnHover
                     fixedHeaderScrollHeight="600px"
                     paginationComponentOptions={pagOptions}
-                    onSelectedRowsChange={(e: any)=>console.log("OnSelect: ", e)}
                 />  
             </div>
         )

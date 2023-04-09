@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Button} from "react-bootstrap";
 import { FaBarcode, FaBoxOpen, FaClipboardList, FaCloudDownloadAlt, FaFlask, FaFolder, FaListOl, FaPowerOff, FaPrint, FaQuestion, FaRegCalendarAlt, FaRegChartBar, FaShareAltSquare, FaWarehouse } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { SetEntornoEmp } from "../../redux/store/Actions";
 import './style.css';
 
@@ -10,24 +10,16 @@ const logo = require('./logo-rosen2.png');
 
 const BarraMenuHz = () => {
    
-    let MisDatos: any;
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const emp: any = useSelector((state: any) => state.emp);
-
-    let url: any = useLocation();
-    url = url.pathname;
-
-    console.log("mi url: ", url);
 
     useEffect(() => {
 
         if (emp.user === "") {
             const ss = sessionStorage.getItem("entorno");
-            console.log("Sesión Storage: ", ss);
             if (ss){
                 let sesionData = JSON.parse(ss);
-                console.log("Sesión Storage: ", sesionData);
                 dispatch(SetEntornoEmp({...sesionData}));
             } else{
                 navigate('/');  

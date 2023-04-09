@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Button} from "react-bootstrap"
 import LocalMsgModalSpinner from "../../../../components/LocalMsgModalSpinner";
-import MsgDialogEspecial from "../../../../components/MsgDialogEspecial";
 import { httpApiPostText } from "../../../../lib";
 import * as env from '../../../../env';
 import MsgModalDialogEspecial from "../../../../components/MsgModalDialogEspecial";

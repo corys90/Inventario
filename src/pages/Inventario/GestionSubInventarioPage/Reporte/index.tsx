@@ -137,7 +137,6 @@ const Reporte = (props: any) =>{
                     highlightOnHover
                     fixedHeaderScrollHeight="600px"
                     paginationComponentOptions={pagOptions}
-                    onSelectedRowsChange={(e: any)=>console.log("OnSelect: ", e)}
                 />                                 
             </div>  
             <MsgModalDialogEspecial

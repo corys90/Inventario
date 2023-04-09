@@ -25,8 +25,7 @@ const MostraTodo = (props: any) =>{
                 'Rosen-API-Key': '2B89CE9E-47DF-4EF1-8353-CF0C18EE029F',
                 'Rosen-API-Secret': 'EFCFA469-8474-4DCF-B84A-CB1B0835ABDA-CDDC8DDB-6E6E-47CB-9422-B8A4312EC01A',
             });
-            const arrDta = await JSON.parse(response.message);  
-            console.log("Datatree: ", arrDta);  
+            const arrDta = await JSON.parse(response.message);   
             setSHCarga(false);                    
             if (response.code >= 400){
                 setMsgRespuestInv("Error: Problemas con el servidor");
